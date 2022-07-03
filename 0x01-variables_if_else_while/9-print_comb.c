@@ -20,7 +20,7 @@ int main(void)
 		}
 		else
 			/* Prints 9 */
-			putchar(i)
+			putchar(i);
 	}
 
 	return (0);
