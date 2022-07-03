@@ -12,7 +12,7 @@ int main(void)
 	/* Prints small letters except q and e */
 	for (i = 97; i < 123; i++)
 	{
-		if (!(i == 101 && i == 113))
+		if (!(i == 101) && !(i == 113))
 		{
 			putchar(i);
 		}
