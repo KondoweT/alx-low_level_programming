@@ -9,19 +9,22 @@ int main(void)
 {
 	int i, j;
 
-	i = 48;
-	/* Use a for loop to compare values of i and j */
-	for (j = 49; j <= 57; j++)
+	/* nest for loop inside another for loop */
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(i);
-		putchar(j);
-		if (i < 56 && j < 57)
+		for (j = 49; j <= 57; j++)
 		{
-			putchar(44);
-			putchar(32);
+			if (j > i)
+			{
+				putchar(i);
+				putchar(j);
+				if (i != 56 || j != 57)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
 		}
-
-		i++;
 	}
 
 	/* Print new line */
