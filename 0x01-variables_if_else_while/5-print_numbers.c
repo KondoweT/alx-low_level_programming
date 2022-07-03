@@ -14,7 +14,7 @@ int main(void)
 	{
 		printf("%d", i);
 	}
-	
+
 	/* Print new line when done */
 	putchar('\n');
 
