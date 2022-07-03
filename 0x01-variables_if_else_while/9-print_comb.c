@@ -15,8 +15,8 @@ int main(void)
 		{
 			/* Print number, comma and a space */
 			putchar(i);
-			putchar(20);
-			putchar(2C);
+			putchar(',');
+			putchar(' ');
 		}
 		else
 			/* Prints 9 */
