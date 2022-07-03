@@ -11,17 +11,19 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
+		/* Print number with code in i */
+		putchar(i);
+
+		/* Add comma and space where needed */
 		if (i < 57)
 		{
-			/* Print number, comma and a space */
-			putchar(i);
-			putchar(',');
-			putchar(' ');
+			putchar(44);
+			putchar(32);
 		}
-		else
-			/* Prints 9 */
-			putchar(i);
 	}
+
+	/* Print new line */
+	putchar('\n');
 
 	return (0);
 }
