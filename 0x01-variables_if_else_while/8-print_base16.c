@@ -10,7 +10,7 @@ int main(void)
 	int num;
 
 	/* Print 0 to 9 */
-	for (num = 47; num <= 57; num++)
+	for (num = 48; num <= 57; num++)
 		putchar(num);
 
 	/* Print a to f */
