@@ -18,8 +18,10 @@ int main(void)
 			{
 				for (d = 48; d <= 57; d++)
 				{
-					putchar(b);
+					if (b >= a && d >= c)
+					{
 					putchar(a);
+					putchar(b);
 					putchar(32);
 					putchar(c);
 					putchar(d);
@@ -27,6 +29,7 @@ int main(void)
 					{
 						putchar(44);
 						putchar(32);
+					}
 					}
 				}
 			}
