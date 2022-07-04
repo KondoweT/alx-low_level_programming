@@ -7,30 +7,35 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int i, j;
 
-	/* nest 4 levels of for statements */
-	for (a = 48; a <= 57; a++)
+	/**
+	 * nested for loop in another and setting the init value of the
+	 * init value to the previous one of outer for loop will ensure
+	 * the proper two two digit number combinations
+	 */
+	for (i = 0; j <= 99; j++)
 	{
-		for (b = 48; b < 57; b++)
+		for (i = j; i <= 99; i++)
 		{
-			for (c = 48; c <= 57; c++)
+			/**
+			 *  The if statement is used to prevent print out if i and
+			 *  j are equal to avoid output like 00 00 and 11 11
+			 */
+			if (i != j)
 			{
-				for (d = 48; d <= 57; d++)
+				/* Print the number */
+				putchar(j / 10 + 48);
+				putchar(j % 10 + 48);
+				putchar(44);
+				putchar(i / 10 + 48);
+				putchar(i / 10 + 48);
+
+				/* Prints comma and whitespace between numbers */
+				if (j * 100 + i != 9899)
 				{
-					if (!(a == c && b == d))
-					{
-					putchar(a);
-					putchar(b);
 					putchar(32);
-					putchar(c);
-					putchar(d);
-					if (a != 56 || b != 57)
-					{
-						putchar(44);
-						putchar(32);
-					}
-					}
+					putchar(44);
 				}
 			}
 		}
