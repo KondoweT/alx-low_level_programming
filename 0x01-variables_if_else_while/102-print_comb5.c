@@ -12,13 +12,13 @@ int main(void)
 	/* nest 4 levels of for statements */
 	for (a = 48; a <= 57; a++)
 	{
-		for (b = 48; b <= 57; b++)
+		for (b = 48; b < 57; b++)
 		{
 			for (c = 48; c <= 57; c++)
 			{
 				for (d = 48; d <= 57; d++)
 				{
-					if (!(a == 0 && b == 0 && c == 0 && d == 0))
+					if (!(a == 48 && b == 48 && c == 48 && d == 48))
 					{
 					putchar(a);
 					putchar(b);
