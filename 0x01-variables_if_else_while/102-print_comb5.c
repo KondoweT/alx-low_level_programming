@@ -2,38 +2,27 @@
 #include <string.h>
 
 /**
- * main - Prints all posssible combinations of two two-digit numbers
+ * main - prints all possible different combinations of two digits
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int i, j;
+	int i, j, k, l;
 
-	/**
-	 * nested for loop in another and setting the init value of the
-	 * init value to the previous one of outer for loop will ensure
-	 * the proper two two digit number combinations
-	 */
-	for (i = 0; j <= 99; j++)
+	/* nest for loop inside another for loop */
+	for (i = 48; i <= 57; i++)
 	{
-		for (i = j; i <= 99; i++)
+		for (j = 48; j <= 57; j++)
 		{
-			/**
-			 *  The if statement is used to prevent print out if i and
-			 *  j are equal to avoid output like 00 00 and 11 11
-			 */
-			if (i != j)
+			for (k = 48; k <= 57; k++)
 			{
-				/* Print the number */
-				putchar(j / 10 + 48);
-				putchar(j % 10 + 48);
-				putchar(44);
-				putchar(i / 10 + 48);
-				putchar(i / 10 + 48);
-
-				/* Prints comma and whitespace between numbers */
-				if (j * 100 + i != 9899)
+				for (l = 49; l <= 57; l++)
 				{
+					putchar(i);
+					putchar(j);
+					putchar(44);
+					putchar(k);
+					putchar(l);
 					putchar(32);
 					putchar(44);
 				}
