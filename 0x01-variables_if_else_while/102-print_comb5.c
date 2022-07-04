@@ -18,8 +18,6 @@ int main(void)
 			{
 				for (l = 49; l <= 57; l++)
 				{
-					if (!(i == k && j == l))
-					{
 					putchar(i);
 					putchar(j);
 					putchar(44);
@@ -27,7 +25,6 @@ int main(void)
 					putchar(l);
 					putchar(32);
 					putchar(44);
-					}
 				}
 			}
 		}
