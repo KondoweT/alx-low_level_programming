@@ -15,6 +15,6 @@ int _isalpha(int c)
 		num = 1;
 	else
 		num = 0;
-	
-	return (num);	
+
+	return (num);
 }
