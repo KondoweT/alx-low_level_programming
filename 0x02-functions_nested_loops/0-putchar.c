@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* add header file for _putchar */
-#include "_putchar.c"
+#include "main.h";
 
 /**
  * main - Prints _putchar followed by a new line
