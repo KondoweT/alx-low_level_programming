@@ -10,13 +10,17 @@
 
 int main(void)
 {
-	char str;
 
-	/* Store _putchar in string variable */
-	str = "_putchar";
-
-	/* call the _putchar() function in _putchar.c */
-	_putchar(str);
+	/* call the _putchar() function in _putchar.c for each letter */
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
