@@ -25,8 +25,7 @@ void times_table(void)
 			if (prod != 81)
 			{
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				_putchar('\t');
 			}
 		}
 		_putchar('\n');
