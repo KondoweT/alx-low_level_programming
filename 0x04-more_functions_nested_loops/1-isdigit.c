@@ -13,6 +13,8 @@ int _isdigit(int c)
 	d = (int)c;
 	if (d >= 0 && d <= 9)
 		result = 1;
+	else if (d >= 65 && d <= 90)
+		result = 1;
 	else
 		result = 0;
 
