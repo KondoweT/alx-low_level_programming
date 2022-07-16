@@ -9,6 +9,6 @@ void _puts(char *str)
 {
 	char sr;
 
-	sr = *str;
+	sr = char (*str);
 	printf("%s\n", sr);
 }
