@@ -2,10 +2,11 @@
 
 /**
  * _puts - prints a string followed by a new line
- * @s: the string to print
+ * @str: the string to print
  */
 
 void _puts(char *str)
 {
-
+	puts(*str);
+	putchar('\n');
 }
