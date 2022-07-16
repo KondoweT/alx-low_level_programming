@@ -8,6 +8,9 @@
 
 void _puts(char *str)
 {
-write(STDOUT_FILENO, str, strlen(str));
-write(STDOUT_FILENO, '\n', 1);
+	char nl;
+
+	nl = '\n';
+	write(STDOUT_FILENO, str, strlen(str));
+	write(STDOUT_FILENO, nl, 1);
 }
