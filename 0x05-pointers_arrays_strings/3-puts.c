@@ -8,5 +8,5 @@
 
 void _puts(char *str)
 {
-	write(*str, '\n');
+	write (STDOUT_FILENO, str, strlen(str));
 }
