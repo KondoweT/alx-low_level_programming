@@ -6,9 +6,9 @@
  * Return: the size of string
  */
 
-size_t _strlen(char *s)
+int _strlen(char *s)
 {
-	size_t size;
+	int size;
 
 	size = 0;
 	while (*s != '\0')
