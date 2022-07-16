@@ -2,8 +2,8 @@
 #include <unistd.h>
 
 /**
- * _puts - prints a string followed by a new line
- * @str: the string to print
+ * _puts - prints string followed by a new line to stdout
+ * @str: string to print to stdout
  */
 
 void _puts(char *str)
@@ -12,5 +12,5 @@ void _puts(char *str)
 
 	nl = '\n';
 	write(STDOUT_FILENO, str, strlen(str));
-	write(STDOUT_FILENO, nl, 1);
+	write(1, &nl, 1);
 }
